@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: multi-datasource
+
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  config-location: classpath:mybatis/config/mybatis-config.xml
+
+#配置sql语句，打印日志 包路径为mapper文件包路径
+logging:
+  level:
+    com.liugang.connect.mapper: debug
+
