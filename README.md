@@ -28,9 +28,18 @@ create table User
         primary key,
     name     varchar(32) null comment '用户名称',
     birthday date        null comment '出生日期'
-)
+);
 
 -- insert data
 INSERT INTO demo2.User (id, name, birthday) VALUES (1, '金庸', '1924-03-10');
 INSERT INTO demo2.User (id, name, birthday) VALUES (2, '罗贯中', '1330-01-10');
 ```
+
+##### 开启springboot的端点监控
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-actuator</artifactId>
+</dependency>
+```
+浏览器访问 http://localhost:9000/actuator  

@@ -27,7 +27,8 @@ public class TestController {
     }
 
     @RequestMapping("/user")
-    public String getUsers(){
+    public String getUsers() throws InterruptedException {
+        Thread.sleep(5000);
         return GsonUtil.toJson(userMapper.getUsers());
     }
 }
