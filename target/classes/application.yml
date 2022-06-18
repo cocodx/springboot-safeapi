@@ -11,3 +11,10 @@ logging:
   level:
     com.liugang.connect.mapper: debug
 
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        exclude: env,beans
