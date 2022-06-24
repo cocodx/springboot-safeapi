@@ -1,6 +1,9 @@
 spring:
   application:
     name: multi-datasource
+#  output:
+#    ansi:
+#      enabled: always
 
 mybatis:
   mapper-locations: classpath:mybatis/mapper/*.xml
@@ -18,3 +21,5 @@ management:
       exposure:
         include: "*"
         exclude: env,beans
+
+

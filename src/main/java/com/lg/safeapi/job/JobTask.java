@@ -17,19 +17,19 @@ import java.util.Random;
  * @date 2022/6/18-15:59
  * @Description
  */
-@Component
-public class JobTask {
-
-    private static final Logger log = LoggerFactory.getLogger(JobTask.class);
-    private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
-
-    //每三秒执行一次
-    @Scheduled(fixedRate = 3000)
-    public void jobTask(){
-        User user = new User();
-        user.setId(new Random(10).nextInt(10000));
-        user.setName("bro");
-        user.setBirthday(new Date(System.currentTimeMillis()));
-        log.info(GsonUtil.toJson(user));
-    }
-}
+//@Component
+//public class JobTask {
+//
+//    private static final Logger log = LoggerFactory.getLogger(JobTask.class);
+//    private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
+//
+//    //每三秒执行一次
+//    @Scheduled(fixedRate = 3000)
+//    public void jobTask(){
+//        User user = new User();
+//        user.setId(new Random(10).nextInt(10000));
+//        user.setName("bro");
+//        user.setBirthday(new Date(System.currentTimeMillis()));
+//        log.info(GsonUtil.toJson(user));
+//    }
+//}
