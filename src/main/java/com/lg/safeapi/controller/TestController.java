@@ -5,6 +5,7 @@ import com.lg.safeapi.mapper.second.UserMapper;
 import com.lg.safeapi.utils.GsonUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -30,5 +31,16 @@ public class TestController {
     public String getUsers() throws InterruptedException {
         Thread.sleep(5000);
         return GsonUtil.toJson(userMapper.getUsers());
+    }
+
+    /**
+     * 传入一个5 or '1'='1'
+     * @param ids
+     * @return
+     */
+    @RequestMapping("/book$")
+    public String book$(@RequestParam String ids){
+        bookMapper.deleteBooks(ids);
+        return "1111";
     }
 }

@@ -43,3 +43,6 @@ INSERT INTO demo2.User (id, name, birthday) VALUES (2, '罗贯中', '1330-01-10'
 </dependency>
 ```
 浏览器访问 http://localhost:9000/actuator  
+
+##### 添加mybatis的#和$测试
+

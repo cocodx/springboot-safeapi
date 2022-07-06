@@ -23,7 +23,7 @@ public class ExcelController {
 
     @RequestMapping("/upload")
     public String upload(MultipartFile file) throws IOException {
-        EasyExcel.read(file.getInputStream(), UploadData.class, new UploadDataListener()).excelType(ExcelTypeEnum.CSV).charset(Charset.forName("gbk")).sheet().doRead();
+//        EasyExcel.read(file.getInputStream(), UploadData.class, new UploadDataListener()).excelType(ExcelTypeEnum.CSV).charset(Charset.forName("gbk")).sheet().doRead();
         return "success";
     }
 }
