@@ -14,4 +14,6 @@ public interface BookMapper {
     List<Book> getBooks();
 
     void deleteBooks(String ids);
+
+    void deleteBooks2(String ids);
 }

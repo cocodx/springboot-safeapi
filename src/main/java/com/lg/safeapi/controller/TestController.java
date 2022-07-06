@@ -34,13 +34,24 @@ public class TestController {
     }
 
     /**
-     * 传入一个5 or '1'='1'
+     * 访问 localhost:8080/book$?ids=1 or 1=1
      * @param ids
      * @return
      */
     @RequestMapping("/book$")
     public String book$(@RequestParam String ids){
         bookMapper.deleteBooks(ids);
+        return "1111";
+    }
+
+    /**
+     * localhost:8080/book2?ids=1 or 1=1
+     * @param ids
+     * @return
+     */
+    @RequestMapping("/book2")
+    public String book2(@RequestParam String ids){
+        bookMapper.deleteBooks2(ids);
         return "1111";
     }
 }

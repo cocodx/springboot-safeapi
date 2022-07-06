@@ -21,5 +21,9 @@
         delete from book where id=${ids}
     </delete>
 
+    <delete id="deleteBooks2">
+         delete from book where id=#{ids}
+    </delete>
+
 
 </mapper>
