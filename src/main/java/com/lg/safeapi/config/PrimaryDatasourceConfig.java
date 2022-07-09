@@ -1,9 +1,11 @@
 package com.lg.safeapi.config;
 
+import com.lg.safeapi.plugins.SqlPlugin;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.mybatis.spring.annotation.MapperScan;
+import org.mybatis.spring.boot.autoconfigure.ConfigurationCustomizer;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;
@@ -52,5 +54,19 @@ public class PrimaryDatasourceConfig {
     @Primary
     public SqlSessionTemplate sqlSessionTemplate(@Qualifier("sqlSessionFactory") SqlSessionFactory sqlSessionFactory){
         return new SqlSessionTemplate(sqlSessionFactory);
+    }
+
+    /**
+     * 可能是配置了两个DatasourceConfig了，导致在mybatis-config里面配置没有生效
+     * @return
+     */
+    @Bean
+    ConfigurationCustomizer mybatisConfigurationCustomizer() {
+        return new ConfigurationCustomizer() {
+            @Override
+            public void customize(org.apache.ibatis.session.Configuration configuration) {
+                configuration.addInterceptor(new SqlPlugin());
+            }
+        };
     }
 }

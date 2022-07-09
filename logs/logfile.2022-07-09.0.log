@@ -1,0 +1,192 @@
+Starting SafeapiStarter using Java 1.8.0_144 on DESKTOP-9A9232T with PID 20532 (D:\code\IDEA_workspace\springboot-safeapi\target\classes started by amazfit in D:\code\IDEA_workspace\springboot-safeapi)
+No active profile set, falling back to 1 default profile: "default"
+Tomcat initialized with port(s): 8080 (http)
+Root WebApplicationContext: initialization completed in 1554 ms
+Exposing 11 endpoint(s) beneath base path '/actuator'
+Tomcat started on port(s): 8080 (http) with context path ''
+Started SafeapiStarter in 3.205 seconds (JVM running for 4.737)
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 1 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HikariPool-2 - Starting...
+HikariPool-2 - Start completed.
+==>  Preparing: select * from book; 
+==> Parameters: 
+<==      Total: 2
+HikariPool-2 - Shutdown initiated...
+HikariPool-2 - Shutdown completed.
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SafeapiStarter using Java 1.8.0_144 on DESKTOP-9A9232T with PID 46408 (D:\code\IDEA_workspace\springboot-safeapi\target\classes started by amazfit in D:\code\IDEA_workspace\springboot-safeapi)
+No active profile set, falling back to 1 default profile: "default"
+Tomcat initialized with port(s): 8080 (http)
+Root WebApplicationContext: initialization completed in 1537 ms
+Exposing 11 endpoint(s) beneath base path '/actuator'
+Tomcat started on port(s): 8080 (http) with context path ''
+Started SafeapiStarter in 3.15 seconds (JVM running for 4.473)
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 1 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HikariPool-2 - Starting...
+HikariPool-2 - Start completed.
+==>  Preparing: select * from book; 
+==> Parameters: 
+<==      Total: 2
+HikariPool-2 - Shutdown initiated...
+HikariPool-2 - Shutdown completed.
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SafeapiStarter using Java 1.8.0_144 on DESKTOP-9A9232T with PID 11204 (D:\code\IDEA_workspace\springboot-safeapi\target\classes started by amazfit in D:\code\IDEA_workspace\springboot-safeapi)
+No active profile set, falling back to 1 default profile: "default"
+Tomcat initialized with port(s): 8080 (http)
+Root WebApplicationContext: initialization completed in 1671 ms
+Exposing 11 endpoint(s) beneath base path '/actuator'
+Tomcat started on port(s): 8080 (http) with context path ''
+Started SafeapiStarter in 3.445 seconds (JVM running for 4.925)
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 2 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HikariPool-2 - Starting...
+HikariPool-2 - Start completed.
+HikariPool-2 - Shutdown initiated...
+HikariPool-2 - Shutdown completed.
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SafeapiStarter using Java 1.8.0_144 on DESKTOP-9A9232T with PID 29764 (D:\code\IDEA_workspace\springboot-safeapi\target\classes started by amazfit in D:\code\IDEA_workspace\springboot-safeapi)
+No active profile set, falling back to 1 default profile: "default"
+Tomcat initialized with port(s): 8080 (http)
+Root WebApplicationContext: initialization completed in 1743 ms
+Exposing 11 endpoint(s) beneath base path '/actuator'
+Tomcat started on port(s): 8080 (http) with context path ''
+Started SafeapiStarter in 3.529 seconds (JVM running for 6.124)
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 2 ms
+HikariPool-2 - Starting...
+HikariPool-2 - Start completed.
+==>  Preparing: select * from book; 
+==> Parameters: 
+<==      Total: 2
+==>  Preparing: select * from book; 
+==> Parameters: 
+<==      Total: 2
+HikariPool-2 - Shutdown initiated...
+HikariPool-2 - Shutdown completed.
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SafeapiStarter using Java 1.8.0_144 on DESKTOP-9A9232T with PID 20556 (D:\code\IDEA_workspace\springboot-safeapi\target\classes started by amazfit in D:\code\IDEA_workspace\springboot-safeapi)
+No active profile set, falling back to 1 default profile: "default"
+Tomcat initialized with port(s): 8080 (http)
+Root WebApplicationContext: initialization completed in 1668 ms
+Exposing 11 endpoint(s) beneath base path '/actuator'
+Tomcat started on port(s): 8080 (http) with context path ''
+Started SafeapiStarter in 3.956 seconds (JVM running for 5.913)
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 2 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HikariPool-2 - Starting...
+HikariPool-2 - Start completed.
+==>  Preparing: select * from book; 
+==> Parameters: 
+<==      Total: 2
+HikariPool-2 - Shutdown initiated...
+HikariPool-2 - Shutdown completed.
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SafeapiStarter using Java 1.8.0_144 on DESKTOP-9A9232T with PID 20208 (D:\code\IDEA_workspace\springboot-safeapi\target\classes started by amazfit in D:\code\IDEA_workspace\springboot-safeapi)
+No active profile set, falling back to 1 default profile: "default"
+Tomcat initialized with port(s): 8080 (http)
+Root WebApplicationContext: initialization completed in 1775 ms
+Exposing 11 endpoint(s) beneath base path '/actuator'
+Tomcat started on port(s): 8080 (http) with context path ''
+Started SafeapiStarter in 3.787 seconds (JVM running for 5.401)
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 2 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HikariPool-2 - Starting...
+HikariPool-2 - Start completed.
+==>  Preparing: select * from book; 
+==> Parameters: 
+<==      Total: 2
+==>  Preparing: select * from book; 
+==> Parameters: 
+<==      Total: 2
+HikariPool-2 - Shutdown initiated...
+HikariPool-2 - Shutdown completed.
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SafeapiStarter using Java 1.8.0_144 on DESKTOP-9A9232T with PID 33044 (D:\code\IDEA_workspace\springboot-safeapi\target\classes started by amazfit in D:\code\IDEA_workspace\springboot-safeapi)
+No active profile set, falling back to 1 default profile: "default"
+Tomcat initialized with port(s): 8080 (http)
+Root WebApplicationContext: initialization completed in 2931 ms
+Exposing 11 endpoint(s) beneath base path '/actuator'
+Tomcat started on port(s): 8080 (http) with context path ''
+Started SafeapiStarter in 6.323 seconds (JVM running for 9.679)
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 1 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HikariPool-2 - Starting...
+HikariPool-2 - Start completed.
+HikariPool-2 - Shutdown initiated...
+HikariPool-2 - Shutdown completed.
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SafeapiStarter using Java 1.8.0_144 on DESKTOP-9A9232T with PID 11304 (D:\code\IDEA_workspace\springboot-safeapi\target\classes started by amazfit in D:\code\IDEA_workspace\springboot-safeapi)
+No active profile set, falling back to 1 default profile: "default"
+Tomcat initialized with port(s): 8080 (http)
+Root WebApplicationContext: initialization completed in 2942 ms
+Exposing 11 endpoint(s) beneath base path '/actuator'
+Tomcat started on port(s): 8080 (http) with context path ''
+Started SafeapiStarter in 5.872 seconds (JVM running for 9.021)
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 2 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HikariPool-2 - Starting...
+HikariPool-2 - Start completed.
+HikariPool-2 - Shutdown initiated...
+HikariPool-2 - Shutdown completed.
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SafeapiStarter using Java 1.8.0_144 on DESKTOP-9A9232T with PID 21388 (D:\code\IDEA_workspace\springboot-safeapi\target\classes started by amazfit in D:\code\IDEA_workspace\springboot-safeapi)
+No active profile set, falling back to 1 default profile: "default"
+Tomcat initialized with port(s): 8080 (http)
+Root WebApplicationContext: initialization completed in 1646 ms
+Exposing 11 endpoint(s) beneath base path '/actuator'
+Tomcat started on port(s): 8080 (http) with context path ''
+Started SafeapiStarter in 3.552 seconds (JVM running for 5.149)
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 2 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HikariPool-2 - Starting...
+HikariPool-2 - Start completed.
+HikariPool-2 - Shutdown initiated...
+HikariPool-2 - Shutdown completed.
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SafeapiStarter using Java 1.8.0_144 on DESKTOP-9A9232T with PID 30692 (D:\code\IDEA_workspace\springboot-safeapi\target\classes started by amazfit in D:\code\IDEA_workspace\springboot-safeapi)
+No active profile set, falling back to 1 default profile: "default"
+Tomcat initialized with port(s): 8080 (http)
+Root WebApplicationContext: initialization completed in 1598 ms
+Exposing 11 endpoint(s) beneath base path '/actuator'
+Tomcat started on port(s): 8080 (http) with context path ''
+Started SafeapiStarter in 3.46 seconds (JVM running for 5.029)
+主函数启动：success
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 2 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HikariPool-2 - Starting...
+HikariPool-2 - Start completed.
+HikariPool-2 - Shutdown initiated...
+HikariPool-2 - Shutdown completed.
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
