@@ -35,6 +35,8 @@ public class SecondDataSourceConfig {
         SqlSessionFactoryBean bean = new SqlSessionFactoryBean();
         bean.setDataSource(dataSource);
         bean.setMapperLocations(new PathMatchingResourcePatternResolver().getResources("classpath:mybatis/mapper/*.xml"));
+        //由于自定义配置sqlSessionFactory导致plugin失效
+        bean.setPlugins(new SqlPlugin());
         return bean.getObject();
     }
 

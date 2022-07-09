@@ -190,3 +190,36 @@ HikariPool-2 - Shutdown initiated...
 HikariPool-2 - Shutdown completed.
 HikariPool-1 - Shutdown initiated...
 HikariPool-1 - Shutdown completed.
+Starting SafeapiStarter using Java 1.8.0_144 on DESKTOP-9A9232T with PID 39856 (D:\code\IDEA_workspace\springboot-safeapi\target\classes started by amazfit in D:\code\IDEA_workspace\springboot-safeapi)
+No active profile set, falling back to 1 default profile: "default"
+Tomcat initialized with port(s): 8080 (http)
+Root WebApplicationContext: initialization completed in 1634 ms
+Exposing 11 endpoint(s) beneath base path '/actuator'
+Tomcat started on port(s): 8080 (http) with context path ''
+Started SafeapiStarter in 3.67 seconds (JVM running for 5.254)
+主函数启动：success
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 1 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HikariPool-2 - Starting...
+HikariPool-2 - Start completed.
+HikariPool-2 - Shutdown initiated...
+HikariPool-2 - Shutdown completed.
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SafeapiStarter using Java 1.8.0_144 on DESKTOP-9A9232T with PID 41260 (D:\code\IDEA_workspace\springboot-safeapi\target\classes started by amazfit in D:\code\IDEA_workspace\springboot-safeapi)
+No active profile set, falling back to 1 default profile: "default"
+Tomcat initialized with port(s): 8080 (http)
+Root WebApplicationContext: initialization completed in 3318 ms
+Exposing 11 endpoint(s) beneath base path '/actuator'
+Tomcat started on port(s): 8080 (http) with context path ''
+Started SafeapiStarter in 5.697 seconds (JVM running for 7.489)
+主函数启动：success
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 2 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HikariPool-2 - Starting...
+HikariPool-2 - Start completed.
+最终不带占位符的可直接执行sql：HikariProxyPreparedStatement@539927248 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: select * from book;

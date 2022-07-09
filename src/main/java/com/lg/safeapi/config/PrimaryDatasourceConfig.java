@@ -41,6 +41,8 @@ public class PrimaryDatasourceConfig {
         SqlSessionFactoryBean bean = new SqlSessionFactoryBean();
         bean.setDataSource(dataSource);
         bean.setMapperLocations(new PathMatchingResourcePatternResolver().getResources("classpath:mybatis/mapper/*.xml"));
+        //由于自定义配置sqlSessionFactory导致plugin失效
+        bean.setPlugins(new SqlPlugin());
         return bean.getObject();
     }
 
@@ -60,7 +62,7 @@ public class PrimaryDatasourceConfig {
      * 可能是配置了两个DatasourceConfig了，导致在mybatis-config里面配置没有生效
      * @return
      */
-    @Bean
+/*    @Bean
     ConfigurationCustomizer mybatisConfigurationCustomizer() {
         return new ConfigurationCustomizer() {
             @Override
@@ -68,5 +70,5 @@ public class PrimaryDatasourceConfig {
                 configuration.addInterceptor(new SqlPlugin());
             }
         };
-    }
+    }*/
 }
