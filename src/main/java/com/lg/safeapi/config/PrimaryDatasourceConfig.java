@@ -13,6 +13,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.DefaultResourceLoader;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 
@@ -43,6 +45,8 @@ public class PrimaryDatasourceConfig {
         bean.setMapperLocations(new PathMatchingResourcePatternResolver().getResources("classpath:mybatis/mapper/*.xml"));
         //由于自定义配置sqlSessionFactory导致plugin失效
         bean.setPlugins(new SqlPlugin());
+        //测试设置配置文件
+        bean.setConfigLocation(new DefaultResourceLoader().getResource("classpath:mybatis/config/mybatis-config.xml"));
         return bean.getObject();
     }
 

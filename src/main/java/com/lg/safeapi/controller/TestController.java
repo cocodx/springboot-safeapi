@@ -1,5 +1,6 @@
 package com.lg.safeapi.controller;
 
+import com.lg.safeapi.entity.Book;
 import com.lg.safeapi.mapper.primary.BookMapper;
 import com.lg.safeapi.mapper.second.UserMapper;
 import com.lg.safeapi.utils.GsonUtil;
@@ -7,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 /**
  * @author 正能量导师
@@ -21,6 +24,18 @@ public class TestController {
 
     @Autowired
     private UserMapper userMapper;
+
+    /**
+     * 测试执行三次getBooks
+     * @return
+     */
+    @RequestMapping("/book1")
+    public String getBooks1(){
+        List<Book> books = bookMapper.getBooks();
+        List<Book> books1 = bookMapper.getBooks();
+        List<Book> books2 = bookMapper.getBooks();
+        return GsonUtil.toJson(bookMapper.getBooks());
+    }
 
     @RequestMapping("/book")
     public String getBooks(){

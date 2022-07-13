@@ -10,9 +10,9 @@ mybatis:
   config-location: classpath:mybatis/config/mybatis-config.xml
 
 #配置sql语句，打印日志 包路径为mapper文件包路径
-#logging:
-#  level:
-#    com.lg.safeapi.mapper: debug
+logging:
+  level:
+    com.lg.safeapi.mapper: debug
 
 
 management:
