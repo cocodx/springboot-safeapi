@@ -1,6 +1,8 @@
 package com.lg.safeapi.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 import java.util.Date;
@@ -11,6 +13,8 @@ import java.util.Date;
  * @Description
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Book {
 
     private Integer id;
@@ -19,4 +23,9 @@ public class Book {
     private Double price;
     private Date createTime;
     private String description;
+
+    public Book(Integer id, String name) {
+        this.id = id;
+        this.name = name;
+    }
 }

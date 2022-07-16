@@ -12,6 +12,12 @@
         <result property="createTime" column="createTime"></result>
         <result property="description" column="description"></result>
     </resultMap>
+    <insert id="insertBook">
+        insert into book values (null,#{author},#{name},#{price},#{createTime},#{description})
+    </insert>
+    <update id="updateBookById">
+        update book set name=#{name} where id=#{id}
+    </update>
 
     <select id="getBooks" resultMap="BookResult">
         select * from book;

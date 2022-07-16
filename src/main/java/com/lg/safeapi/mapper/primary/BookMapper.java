@@ -16,4 +16,8 @@ public interface BookMapper {
     void deleteBooks(String ids);
 
     void deleteBooks2(String ids);
+
+    int insertBook(Book book);
+
+    int updateBookById(Book Book);
 }
