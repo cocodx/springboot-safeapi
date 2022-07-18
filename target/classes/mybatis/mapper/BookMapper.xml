@@ -3,7 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.lg.safeapi.mapper.primary.BookMapper">
-
+    <cache/>
     <resultMap id="BookResult" type="com.lg.safeapi.entity.Book">
         <result property="id" column="id"></result>
         <result property="author" column="author"></result>

@@ -43,6 +43,8 @@ public class SecondDataSourceConfig {
         bean.setConfigLocation(new DefaultResourceLoader().getResource("classpath:mybatis/config/mybatis-config.xml"));
         return bean.getObject();
     }
+    
+
 
 
 }

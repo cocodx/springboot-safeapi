@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -17,7 +18,10 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class Book {
+/**
+ * 开启二级缓存，对应的实体类要实现序列化
+ */
+public class Book implements Serializable {
 
     private Integer id;
     private String author;

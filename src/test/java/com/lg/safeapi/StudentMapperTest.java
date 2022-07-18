@@ -65,4 +65,30 @@ public class StudentMapperTest {
 
     }
 
+    /**
+     * 测试二级缓存效果，不提交事务，sqlSession1查询完数据后，sqlSession2相同的查询能否会从缓存中获取数据。
+     */
+    @Test
+    public void testCacheWithoutCommitOrClose()throws Exception{
+        SqlSession session1 = factory.openSession(true);
+        SqlSession session2 = factory.openSession(true);
+        SqlSession session3 = factory.openSession(true);
+
+        BookMapper bookMapper1 = session1.getMapper(BookMapper.class);
+        BookMapper bookMapper2 = session2.getMapper(BookMapper.class);
+        BookMapper bookMapper3 = session3.getMapper(BookMapper.class);
+
+        System.out.println("bookMapper1:"+bookMapper1.getBooks());
+        //sqlsession1 提交事务
+        session1.commit();
+        System.out.println("bookMapper2:"+bookMapper2.getBooks());
+
+        //测试update对二级缓存刷新，确实刷新
+        bookMapper3.updateBookById(new Book(4,"人类简史2"));
+        session3.commit();
+        System.out.println("bookMapper2:"+bookMapper2.getBooks());
+
+    }
+
+
 }
