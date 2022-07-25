@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Definitions_02m23tv" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="4.10.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.15.0">
+  <bpmn:process id="test" name="test" isExecutable="true">
+    <bpmn:startEvent id="sid-510b4c36-e64c-4acb-8bd4-ba82d0799a2a" name="start" camunda:asyncAfter="true">
+      <documentation>start target</documentation>
+      <outgoing>sid-c354528b-35ee-49a1-b01c-41f93e9d15d3</outgoing>
+      <outgoing>sid-e6c2ada8-9fc2-4452-9d40-fd652c006426</outgoing>
+    </bpmn:startEvent>
+    <bpmn:endEvent id="sid-f8edaf27-eaa1-4801-8dae-05af93de1014">
+      <incoming>sid-04573712-9c7f-44c6-a234-6560270d0335</incoming>
+    </bpmn:endEvent>
+    <bpmn:serviceTask id="sid-434dfabb-9f46-4b02-9caa-4efb77151884" camunda:exclusive="true" name="Service task">
+      <incoming>sid-e6c2ada8-9fc2-4452-9d40-fd652c006426</incoming>
+      <outgoing>sid-04573712-9c7f-44c6-a234-6560270d0335</outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="sid-e6c2ada8-9fc2-4452-9d40-fd652c006426" sourceRef="sid-510b4c36-e64c-4acb-8bd4-ba82d0799a2a" targetRef="sid-434dfabb-9f46-4b02-9caa-4efb77151884"/>
+    <bpmn:sequenceFlow id="sid-04573712-9c7f-44c6-a234-6560270d0335" sourceRef="sid-434dfabb-9f46-4b02-9caa-4efb77151884" targetRef="sid-f8edaf27-eaa1-4801-8dae-05af93de1014"/>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_test">
+    <bpmndi:BPMNPlane id="BPMNPlane_test" bpmnElement="test">
+      <bpmndi:BPMNShape id="shape-c9d86bc7-9373-43d7-a609-768ba109e8f9" bpmnElement="sid-510b4c36-e64c-4acb-8bd4-ba82d0799a2a">
+        <dc:Bounds x="-832.75006" y="-500.75" width="30.0" height="30.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape-1ab4fee5-afcb-4ac9-baf4-87d85fcd6dad" bpmnElement="sid-f8edaf27-eaa1-4801-8dae-05af93de1014">
+        <dc:Bounds x="-467.375" y="-582.0" width="30.0" height="30.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape-7ae5097b-1708-4667-a669-008533319374" bpmnElement="sid-434dfabb-9f46-4b02-9caa-4efb77151884">
+        <dc:Bounds x="-682.875" y="-503.0" width="100.0" height="80.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="edge-d10de48c-3af4-411e-98dc-70bde5c56949" bpmnElement="sid-e6c2ada8-9fc2-4452-9d40-fd652c006426">
+        <di:waypoint x="-802.75006" y="-478.25"/>
+        <di:waypoint x="-682.875" y="-483.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge-5bf4d1a6-ed3b-4682-b545-cda6313822da" bpmnElement="sid-04573712-9c7f-44c6-a234-6560270d0335">
+        <di:waypoint x="-582.875" y="-483.0"/>
+        <di:waypoint x="-467.375" y="-559.5"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
