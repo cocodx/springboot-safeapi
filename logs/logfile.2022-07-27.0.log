@@ -1,0 +1,7 @@
+performing create on engine with resource org/activiti/db/create/activiti.mysql.create.engine.sql
+Found MySQL: majorVersion=8 minorVersion=0
+performing create on history with resource org/activiti/db/create/activiti.mysql.create.history.sql
+Found MySQL: majorVersion=8 minorVersion=0
+ProcessEngine default created
+ProcessEngine default created
+Process deployed: {id: Process_181gnrf:1:4, key: Process_181gnrf, name: null }
